@@ -24,6 +24,11 @@ from django.urls import path
 #]
 
 from django.urls import path, include
+
+from women.views import pageNotFound
+
 urlpatterns=[
     path('women/', include('women.urls'))
 ]
+
+handler404=pageNotFound
